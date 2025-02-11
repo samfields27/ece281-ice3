@@ -46,5 +46,21 @@ begin
         S     => S(1),
         Cout  => w_carry(1)
     );
+    full_adder_2: full_adder
+    port map(
+        A     => A(2),
+        B     => B(2),
+        Cin   => w_carry(1),
+        S     => S(2),
+        Cout  => w_carry(2)
+    );
+    full_adder_3: full_adder
+    port map(
+        A     => A(3),
+        B     => B(3),
+        Cin   => w_carry(2),
+        S     => S(3),
+        Cout  => w_carry(3)
+    );
 
 end Behavioral;
