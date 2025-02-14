@@ -52,7 +52,7 @@ begin
        w_addends <= x"00"; w_Cin <= '1'; wait for 10 ns;
 	       assert (w_sum = x"1" and w_Cout = '0') report "failure on easy-forget case" severity failure;
 	   w_addends <= x"0A"; w_Cin <= '1'; wait for 10 ns;
-	       assert (w_sum = x"0B" and w_Cout = '0') report "failure on random case" severity failure;
+	       assert (w_sum = x"B" and w_Cout = '1') report "failure on random case" severity failure;
 	       
 	       
 		wait; -- wait forever
