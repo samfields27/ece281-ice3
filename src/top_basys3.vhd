@@ -82,8 +82,8 @@ begin
 	
 	-- CONCURRENT STATEMENTS --------
     w_addends(3 downto 0) <= sw(4 downto 1);
-    w_addends(7 downto 4) <= sw(16 downto 12);
-    w_Cin <= sw(1 downto 0);
+    w_addends(7 downto 4) <= sw(15 downto 12);
+    w_Cin <= sw(0);
 	
 	led(3 downto 0) <= w_sum;
 	led(15) <= w_Cout;
