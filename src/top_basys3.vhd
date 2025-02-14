@@ -71,7 +71,7 @@ end ripple_adder;
   
 begin
 	-- PORT MAPS --------------------
-	ripple_adder_uut : ripple_adder port map (
+	ripple_adder_2 : ripple_adder port map (
 	   A    => w_addends(3 downto 0),
 	   B    => w_addends(7 downto 4),
 	   Cin  => w_Cin,
@@ -84,6 +84,8 @@ begin
 	led(3 downto 0) <= w_sum;
 	led(15 downto 14) <= w_Cout;
 	led(14 downto 4) <= (others => '0'); -- Ground unused LEDs
+	
+	
 
 	
 	
