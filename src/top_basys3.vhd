@@ -81,8 +81,8 @@ begin
 	---------------------------------
 	
 	-- CONCURRENT STATEMENTS --------
-	led(0 downto 3) <= w_sum;
-	led(14 downto 15) <= w_Cout;
+	led(3 downto 0) <= w_sum;
+	led(15 downto 14) <= w_Cout;
 	led(14 downto 4) <= (others => '0'); -- Ground unused LEDs
 
 	
