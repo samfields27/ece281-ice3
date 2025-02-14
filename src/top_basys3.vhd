@@ -62,7 +62,7 @@ component ripple_adder is
            Cin : in STD_LOGIC;
            S : out STD_LOGIC_VECTOR (3 downto 0);
            Cout : out STD_LOGIC);
-end ripple_adder;
+end component;
     -- declare any signals you will need	
 	signal w_addends     : std_logic_vector(7 downto 0) := x"00"; -- the numbers being added
 	signal w_sum         : std_logic_vector(3 downto 0) := x"0";
