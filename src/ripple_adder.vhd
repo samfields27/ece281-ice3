@@ -62,7 +62,7 @@ begin
         S     => S(3),
         Cout  => w_carry(3)
     );
-    Cout  <= w_carry(3)
+    Cout  <= w_carry(3);
     
     
 
